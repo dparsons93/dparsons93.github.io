@@ -1,0 +1,373 @@
+purple = #5A2A42
+darkpurple = #3D1425
+lightpurple = #C2B5BA
+large = 'only screen and (max-width: 1000px)'
+medium = 'only screen and (max-width: 700px)'
+small = 'only screen and (max-width: 460px)'
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
+
+@font-face
+   font-family Whiskey
+   font-style normal
+   src url(../fonts/whiskey.ttf)
+   
+@font-face
+	font-family Big Noodle
+	font-style normal
+	src url(../fonts/big-noodle.ttf)
+
+@font-face
+   font-family Cheddar Jack
+   font-style normal
+   src url(../fonts/cheddar-jack.ttf)
+  
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc 
+    display none
+
+.gmnoprint div 
+    background none !important
+
+html
+	height 100%
+
+body 
+	background-color darkpurple
+
+#home
+ 	background purple
+ 	text-align center
+ 	padding-top 5%
+  
+#home h1
+	font-family Whiskey
+	color #E05536
+	font-size 12em
+	margin-top 0px
+	margin-bottom -40px
+	@media large
+		font-size 8em
+	@media medium
+		font-size 6em
+	@media small
+		 font-size 4em
+ 	
+#home h3
+	font-family Cheddar Jack
+	color white
+	font-size 3em
+	@media medium
+		font-size 2.5em
+	@media small
+		font-size 1.5em
+	
+#home h2
+	font-family Big Noodle
+	color white
+	font-size 5.5em
+	@media large
+		font-size 4.5em
+	@media medium
+		font-size 3.5em
+	@media small 
+		font-size 2.5em
+		margin-top 30px
+	
+.text-block
+	position fixed
+	width 100%
+	z-index 250
+	top 130px
+	@media large
+		top 80px
+	@media medium
+		top 40px
+	@media small
+		top 10px
+		position absolute
+
+.layer-one
+	width 100%
+	position absolute
+	z-index 251
+
+#about
+	font-weight 300
+	font-size 2em
+	padding 13%
+	text-align center
+	color white
+	font-family Roboto
+	background-color darkpurple
+	z-index 300
+	position relative
+	height
+	
+#about h2
+	font-family Big Noodle
+	margin-top 0
+	color #E05536
+	font-size 3em
+	text-align center
+	@media large
+		font-size 2em
+	@media medium
+		font-size 1.5em
+	@media small
+		font-size 1em
+
+#about p
+	margin-bottom 0
+	line-height 1.6
+	text-align left
+	font-size 1.1em
+	@media medium
+		font-size 1em
+	@media small
+		font-size 0.6em
+		padding 0
+
+.layer-two
+	width 100%
+	opacity 0.3
+	position relative
+	
+.triangle-border
+	width 100%
+	position absolute
+	z-index 500
+	@media small
+		display none
+	
+.triangle-border-top
+	width 100%
+	position relative
+	z-index 500
+	@media medium
+		padding-bottom 10px
+	@media small
+		display none
+	
+#map 
+    width 100%
+    height 550px
+    position relative
+    z-index 100
+    padding 0
+    margin-bottom -2%
+    background-color purple
+    
+.location-card
+	font-family Roboto
+	position absolute
+	color darkpurple
+	background-color white 
+	width 250px
+	padding 20px 25px
+	z-index 300
+	top 150px
+	left 150px
+	@media large
+		left 100px
+	@media medium
+		left 50px
+	@media small
+		left 75px
+		
+
+.location-card h4
+	font-size 2.5em
+	font-weight 300
+	padding-bottom 8px
+
+.location-card p
+	font-size 1.2em
+	margin-left 30px
+	font-weight 100
+
+#location
+	position relative
+	z-index 300
+	background-color darkpurple
+
+#location-card img
+	margin-top 5px
+
+#sponsors
+	background-color darkpurple
+	padding-bottom 200px
+	@media large
+		padding-bottom 100px
+	
+#sponsors h2
+	color white
+	font-family Big Noodle
+	font-size 5.5em
+	text-align center
+	margin-bottom 80px
+	@media large
+		font-size 4em
+	@media medium
+		margin-bottom 30px
+	
+#sponsors img
+	padding 50px
+	position relative
+	z-index 300
+
+.container-fluid
+	padding 100px
+	@media small
+		padding 30px
+
+.clouds
+	background url("../img/clouds.svg") center center no-repeat
+	background-size contain
+	position relative
+	width 100%
+	z-index 500
+	margin-bottom -5px
+	padding-bottom 15%
+
+#contact h2
+	color darkpurple
+	font-family Big Noodle
+	font-size 5.5em
+	margin-bottom 40px
+	@media large
+		font-size 4em
+		margin-bottom 30px
+	
+#contact p
+	color darkpurple
+	font-family Roboto
+	font-weight 300
+	font-size 3em
+	padding-bottom 40px
+	@media large
+		font-size 2em
+	@media medium
+		font-size 1.3em
+	
+#contact
+	background-color lightpurple
+	text-align center
+	position relative
+	z-index 300
+	
+	
+input[type=text]
+	border-radius 6px
+	border none
+	background-color #DAD2D5
+	font-family Roboto
+	font-weight 300
+	color darkpurple
+	font-size 1.5em
+	padding 15px
+	@media large
+		margin-bottom 25px
+	
+#contact .row
+	margin-bottom 25px
+	@media large
+		margin-bottom 0
+	
+
+::-webkit-input-placeholder
+   color darkpurple
+   opacity 0.5
+  
+button
+	background-color #E05536
+	border none
+	border-radius 100px
+	font-family Big Noodle
+	color white
+	font-size 2.5em
+	padding 5px 100px
+	@media small
+		padding 5px 50px
+
+textarea
+	resize none
+	border-radius 6px
+	border none
+	background-color #DAD2D5
+	font-family Roboto
+	font-weight 300
+	color darkpurple
+	font-size 1.5em
+	padding-top 10px
+	margin-bottom 20px
+	
+input[type=text]:focus, textarea:focus 
+	outline none
+
+
+svg
+	position relative
+
+footer 
+	background-color lightpurple
+	text-align center
+	z-index 300	
+	
+footer img
+	width 130px
+	padding 20px 10px
+	@media large
+		width 70px
+		padding 10px 5px
+
+footer h2
+	margin-top -10px
+	font-family Big Noodle
+	color white
+	font-size 4.5em
+	@media large
+		font-size 3em
+	@media medium
+		font-size 2.5em
+		margin-bottom 5px
+	@media small
+		font-size 2em
+		margin-bottom 0px
+	
+button:focus
+	outline none
+
+.social-container
+	width 100%
+	position relative
+	background-color darkpurple
+		
+.bats-layer-one
+	background url("../img/bats-layer-1.svg") no-repeat center
+	background-size cover
+	width 100%
+	position absolute
+	height 100vw
+	z-index 1000
+	
+.bats-parallax
+	@media large
+		display none
+		
+footer a:hover
+	opacity .8
+
+#moon
+	position fixed
+	width 15%
+	left 100px
+	top 100px
+	z-index 200
+	@media medium
+		left 50px
+		top 100px
+	@media small
+		display none
