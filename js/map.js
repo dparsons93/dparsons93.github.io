@@ -9,10 +9,9 @@ function init() {
         zoom: 15,
         scrollwheel: false,
         disableDefaultUI: true,
-        draggable: false,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(44.36583, -79.65617), // 15 Peck Street
+        center: new google.maps.LatLng(41.6227359, -74.5690411), // spooky lane
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
@@ -28,7 +27,7 @@ function init() {
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(44.36583, -79.65617),
+        position: new google.maps.LatLng(41.6227359, -74.5690411),
         map: map,
         title: 'Snazzy!'
     });
